@@ -74,10 +74,10 @@ let pokemonChar = [
     type: "Psychic",
   },
   {
-    name: "",
-    img: "resources/images/",
-    species: "",
-    type: "",
+    name: "Glalie",
+    img: "resources/images/glalie.webp",
+    species: "Face Pokémon",
+    type: "Ice",
   },
   {
     name: "",
