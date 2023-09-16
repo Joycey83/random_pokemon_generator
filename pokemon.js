@@ -1,7 +1,7 @@
 // These variables grab the HTML elements needed to interact with the DOM
 const pokemonName = document.querySelector(".pokemon-name");
-const generateBtn = document.querySelector(".generate-btn");
 const pokemonStats = document.querySelector(".stats-info");
+const generateBtn = document.querySelector(".generate-btn");
 
 // Arrays of objects that hold the pokemon characters information
 
@@ -138,6 +138,8 @@ function generatePokemon() {
       ".pokemon-type"
     ).textContent = `Type: ${randPokemon.type}`;
   }
+
+  generateBtn.innerHTML = `Choosen pokemon : ${randPokemon.name}`;
 }
 
 generatePokemon();
