@@ -22,7 +22,7 @@ let pokemonChar = [
     name: "Charizard",
     img: "./resources/images/Charizard.png",
     species: "Flame Pokémon",
-    type: ["fire","flying"],
+    type: ["fire", "flying"],
   },
   {
     name: "Snivy",
@@ -42,10 +42,41 @@ let pokemonChar = [
     species: "Seed Pokémon",
     type: ["grass", "posion"],
   },
+  {
+    name: "Charmander",
+    img: "resources/images/Charmander.png",
+    species: "Lizard Pokémon",
+    type: "fire",
+  },
+  {
+    name: "",
+    img: "resources/images/",
+    species: "",
+    type: "",
+  },
+  {
+    name: "",
+    img: "resources/images/",
+    species: "",
+    type: "",
+  },
+  {
+    name: "",
+    img: "resources/images/",
+    species: "",
+    type: "",
+  },
+  {
+    name: "",
+    img: "resources/images/",
+    species: "",
+    type: "",
+  },
 ];
 
 function generatePokemon() {
   const randPokemonIndex = Math.floor(Math.random() * pokemonChar.length);
+  //   Access the random pokemon characters by index
   const randPokemon = pokemonChar[randPokemonIndex];
 
   // Update DOM elements with Pokémon information
@@ -55,7 +86,7 @@ function generatePokemon() {
     ".pokemon-species"
   ).textContent = `Species: ${randPokemon.species}`;
 
-  // Handle cases where  there is more than one pokemon'type' 
+  // Handle cases where  there is more than one pokemon'type'
   if (Array.isArray(randPokemon.type)) {
     document.querySelector(
       ".pokemon-type"
