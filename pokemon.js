@@ -20,9 +20,9 @@ let pokemonChar = [
   },
   {
     name: "Charizard",
-    img: "",
-    species: "",
-    type: "",
+    img: "./resources/images/Charizard.png",
+    species: "Flame Pokémon",
+    type: ["fire","flying"],
   },
   {
     name: "Snivy",
