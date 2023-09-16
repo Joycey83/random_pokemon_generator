@@ -1,16 +1,22 @@
 // These variables grab the HTML elements needed to interact with the DOM
 const pokemonName = document.querySelector(".pokemon-name");
 const generateBtn = document.querySelector(".generate-btn");
+const pokemonStats = document.querySelector(".stats-info");
 
 // Arrays of pokemon characters
 let pokemon = [
-    "Dedenne",
-    "Cinccino",
-    "Charizard",
-    "Snivy",
-    "Pikachu",
-    "Bulbasaur",
+  "Dedenne",
+  "Cinccino",
+  "Charizard",
+  "Snivy",
+  "Pikachu",
+  "Bulbasaur",
 ];
+
+function generatePokemon() {
+  const randPokemon = pokemon[Math.floor(Math.random() * pokemon.length)];
+  console.log(randPokemon);
+}
 
 // Arrays of objects that hold the pokemon characters information
 
