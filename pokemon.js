@@ -133,7 +133,7 @@ function generatePokemon() {
   if (Array.isArray(randPokemon.type)) {
     document.querySelector(
       ".pokemon-type"
-    ).textContent = `Types: ${randPokemon.type[0]}, ${randPokemon.type[1]}`;
+    ).textContent = `Types: ${randPokemon.type.join(",")}`;
   } else {
     document.querySelector(
       ".pokemon-type"
