@@ -38,9 +38,9 @@ let pokemonChar = [
   },
   {
     name: "Bulbasaur",
-    img: "",
-    type: "Seed Pokémon",
-    species: ["grass", "posion"],
+    img: "resources/images/Bulbasaur.png",
+    species: "Seed Pokémon",
+    type: ["grass", "posion"],
   },
 ];
 
