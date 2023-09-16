@@ -142,4 +142,6 @@ function generatePokemon() {
   generateBtn.innerHTML = `Choosen pokemon : ${randPokemon.name}`;
 }
 
-generatePokemon();
+generateBtn.addEventListener("click", generatePokemon);
+
+// generatePokemon();
