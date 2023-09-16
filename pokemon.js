@@ -80,16 +80,16 @@ let pokemonChar = [
     type: "Ice",
   },
   {
-    name: "",
-    img: "resources/images/",
-    species: "",
-    type: "",
+    name: "Swampert",
+    img: "resources/images/swampert.png",
+    species: "Mud Fish Pokémon",
+    type: ["water", "ground"],
   },
   {
-    name: "",
-    img: "resources/images/",
-    species: "",
-    type: "",
+    name: "Scizor",
+    img: "resources/images/scizor.png",
+    species: "Pincer Pokémon",
+    type: ["bug","steel"],
   },
   {
     name: "",
@@ -142,6 +142,7 @@ function generatePokemon() {
 
   generateBtn.innerHTML = "Gotta catch them all!";
 }
+
 
 generateBtn.addEventListener("click", generatePokemon);
 
