@@ -144,4 +144,10 @@ function generatePokemon() {
 
 generateBtn.addEventListener("click", generatePokemon);
 
+// text return function
+
+function textReturn() {
+  generateBtn.textContent = "Generate Pokemon";
+}
+
 

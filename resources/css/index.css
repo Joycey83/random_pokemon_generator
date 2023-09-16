@@ -8,3 +8,7 @@
   display: block;
   width: 350px;
 }
+
+.close-btn {
+  display: none;
+}
