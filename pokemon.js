@@ -2,6 +2,7 @@
 const pokemonName = document.querySelector(".pokemon-name");
 const pokemonStats = document.querySelector(".stats-info");
 const generateBtn = document.querySelector("#generate-btn");
+const close = document.querySelector("#close-btn");
 
 // Arrays of objects that hold the pokemon characters information
 
@@ -150,4 +151,4 @@ function textReturn() {
   generateBtn.textContent = "Generate Pokemon";
 }
 
-
+close.addEventListener("click", textReturn);
