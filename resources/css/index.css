@@ -12,3 +12,9 @@
 #close-btn {
   display: none;
 }
+
+.pokemon-type {
+  font-size: 1rem;
+  background-color: aquamarine;
+  padding: 0.5rem;
+}

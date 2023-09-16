@@ -59,13 +59,13 @@ let pokemonChar = [
     name: "Jigglypuff",
     img: "resources/images/jigglypuff.png",
     species: "Balloon Pokémon",
-    type: ["normal","fairy"],
+    type: ["normal", "fairy"],
   },
   {
     name: "Gastly",
     img: "resources/images/gastly.png",
     species: "Gas Pokémon",
-    type: ["ghost","poison"],
+    type: ["ghost", "poison"],
   },
   {
     name: "Mew",
@@ -89,7 +89,7 @@ let pokemonChar = [
     name: "Scizor",
     img: "resources/images/scizor.png",
     species: "Pincer Pokémon",
-    type: ["bug","steel"],
+    type: ["bug", "steel"],
   },
   {
     name: "",
@@ -142,7 +142,6 @@ function generatePokemon() {
 
   generateBtn.innerHTML = "Gotta catch them all!";
 }
-
 
 generateBtn.addEventListener("click", generatePokemon);
 
