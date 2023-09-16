@@ -26,13 +26,13 @@ let pokemonChar = [
   },
   {
     name: "Snivy",
-    img: "",
+    img: "./resources/images/Snivy.png",
     species: "Grass Snake Pokémon",
     type: "grass",
   },
   {
     name: "Pikachu",
-    img: "",
+    img: "./resources/images/Pickachu.png",
     species: "Mouse Pokémon",
     type: "electric",
   },
