@@ -49,10 +49,10 @@ let pokemonChar = [
     type: "fire",
   },
   {
-    name: "",
-    img: "resources/images/",
-    species: "",
-    type: "",
+    name: "Squirtle",
+    img: "resources/images/squirtle.png",
+    species: "Tiny Turtle Pokémon",
+    type: "water",
   },
   {
     name: "",
