@@ -139,7 +139,7 @@ function generatePokemon() {
     ).textContent = `Type: ${randPokemon.type}`;
   }
 
-  generateBtn.innerHTML = `Choosen pokemon : ${randPokemon.name}`;
+  generateBtn.innerHTML = "Gotta catch them all!";
 }
 
 generateBtn.addEventListener("click", generatePokemon);
