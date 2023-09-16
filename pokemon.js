@@ -96,6 +96,24 @@ let pokemonChar = [
     species: "",
     type: "",
   },
+  {
+    name: "",
+    img: "resources/images/",
+    species: "",
+    type: "",
+  },
+  {
+    name: "",
+    img: "resources/images/",
+    species: "",
+    type: "",
+  },
+  {
+    name: "",
+    img: "resources/images/",
+    species: "",
+    type: "",
+  },
 ];
 
 function generatePokemon() {
