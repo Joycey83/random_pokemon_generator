@@ -3,8 +3,8 @@ const pokemonName = document.querySelector(".pokemon-name");
 const pokemonStats = document.querySelector(".stats-info");
 const generateBtn = document.querySelector("#generate-btn");
 const close = document.querySelector("#close-btn");
-const typeSpan = document.createElement("span");
-const typeContainer = document.querySelector(".pokemon-type");
+// const typeSpan = document.createElement("span");
+// const typeContainer = document.querySelector(".pokemon-type");
 // Arrays of objects that hold the pokemon characters information
 
 let pokemonChar = [
@@ -133,15 +133,16 @@ function generatePokemon() {
   // Handle cases where  there is more than one pokemon'type'
   if (Array.isArray(randPokemon.type)) {
     randPokemon.type.forEach((type) => {
-      typeSpan.textContent = random.type.join(" ,");
-      typeContainer.classList.add("pokemon-type-span");
+      const typeSpan = document.createElement("span");
+      typeSpan.textContent = type;
+      typeSpan.classList.add("pokemon-type-span"); // Add a class for styling
       typeContainer.appendChild(typeSpan);
     });
   } else {
+    const typeSpan = document.createElement("span");
     typeSpan.textContent = randPokemon.type;
-      typeContainer.classList.add("pokemon-type-span");
-      typeContainer.appendChild(typeSpan);
-
+    typeSpan.classList.add("pokemon-type-span"); // Add a class for styling
+    typeContainer.appendChild(typeSpan);
   }
 }
 
