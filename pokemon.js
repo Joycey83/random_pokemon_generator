@@ -94,7 +94,7 @@ let pokemonChar = [
   },
   {
     name: "Nidoqueen",
-    img: "resources/images/",
+    img: "resources/images/nidoqueen.png",
     species: "Drill Pokémon",
     type: ["poison", "ground"],
   },
