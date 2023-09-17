@@ -112,7 +112,7 @@ let pokemonChar = [
   },
   {
     name: "Snorlax",
-    img: "resources/images/",
+    img: "resources/images/snorlax.png",
     species: "Sleeping Pokémon",
     type: "normal",
   },
