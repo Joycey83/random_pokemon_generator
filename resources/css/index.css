@@ -17,11 +17,17 @@ body {
   display: none;
 }
 
+.pokemon-species {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
 .pokemon-type-span {
   background-color: #8f1f1f;
   color: #110e0e;
   padding: 5px 10px;
   margin-right: 10px;
+  margin-bottom: 0.5rem;
   border-radius: 5px;
 }
 
@@ -40,6 +46,9 @@ body {
 }
 
 .btn {
+  border: none;
+  border-radius: 5px;
   padding: 2rem;
   background-color: aquamarine;
+  cursor: pointer;
 }
