@@ -27,7 +27,6 @@ body {
 
 .pokemon-info-container {
   max-width: 500px;
-  background-color: aqua;
   padding: 1rem;
   margin: 1.2rem auto;
   height: 500px; 
@@ -43,5 +42,4 @@ body {
 .btn {
   padding: 2rem;
   background-color: aquamarine;
-  min-width: 200px;
 }
