@@ -3,7 +3,8 @@ const pokemonName = document.querySelector(".pokemon-name");
 const pokemonStats = document.querySelector(".stats-info");
 const generateBtn = document.querySelector("#generate-btn");
 const close = document.querySelector("#close-btn");
-
+const typeSpan = document.createElement("span");
+const typeContainer = document.querySelector(".pokemon-type");
 // Arrays of objects that hold the pokemon characters information
 
 let pokemonChar = [
@@ -131,16 +132,17 @@ function generatePokemon() {
 
   // Handle cases where  there is more than one pokemon'type'
   if (Array.isArray(randPokemon.type)) {
-    document.querySelector(
-      ".pokemon-type"
-    ).textContent = `Types: ${randPokemon.type.join(",")}`;
+    randPokemon.type.forEach((type) => {
+      typeSpan.textContent = type;
+      typeContainer.classList.add("pokemon-type-span");
+      typeContainer.appendChild(typeSpan);
+    });
   } else {
-    document.querySelector(
-      ".pokemon-type"
-    ).textContent = `Type: ${randPokemon.type}`;
-  }
+    typeSpan.textContent = randPokemon.type;
+      typeContainer.classList.add("pokemon-type-span");
+      typeContainer.appendChild(typeSpan);
 
-  generateBtn.innerHTML = "Gotta catch them all!";
+  }
 }
 
 generateBtn.addEventListener("click", generatePokemon);
