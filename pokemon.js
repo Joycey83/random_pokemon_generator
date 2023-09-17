@@ -147,8 +147,8 @@ generateBtn.addEventListener("click", generatePokemon);
 
 // text return function
 
-function textReturn() {
-  generateBtn.textContent = "Generate Pokemon";
-}
+// function textReturn() {
+//   generateBtn.textContent = "Generate Pokemon";
+// }
 
-close.addEventListener("click", textReturn);
+// close.addEventListener("click", textReturn);
