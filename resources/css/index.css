@@ -29,13 +29,14 @@
   margin: 0.5rem auto;
 }
 
-button {
-  position: relative;
-}
-
-button.btn-container {
-  position: absolute;
+.btn-container {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.btn {
+  box-sizing: border-box;
+  padding: 0.5rem 0.2rem;
+  transition: all 0.2s ease;
 }
