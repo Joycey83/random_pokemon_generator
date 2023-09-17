@@ -24,12 +24,17 @@
 
 .pokemon-info-container {
   max-width: 650px;
-  background-color: aqua;
-  padding: 2rem;
-  margin: 2rem auto;
+  /* background-color: aqua; */
+  padding: 1rem;
+  margin: 0.5rem auto;
 }
 
-.btn-container {
+button {
+  position: relative;
+}
+
+button.btn-container {
+  position: absolute;
   display: flex;
   justify-content: center;
   align-items: center;
