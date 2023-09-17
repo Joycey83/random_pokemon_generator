@@ -99,24 +99,25 @@ let pokemonChar = [
     type: ["poison", "ground"],
   },
   {
-    name: "",
-    img: "resources/images/",
-    species: "",
-    type: "",
+    name: "Sandslash",
+    img: "resources/images/sandlash.png",
+    species: "Mouse Pokémon",
+    type: "ground",
   },
   {
-    name: "",
-    img: "resources/images/",
-    species: "",
-    type: "",
+    name: "Oddish",
+    img: "resources/images/oddish.png",
+    species: "Weed Pokémon",
+    type: ["grass", "poison"],
   },
   {
-    name: "",
+    name: "Snorlax",
     img: "resources/images/",
-    species: "",
-    type: "",
+    species: "Sleeping Pokémon",
+    type: "normal",
   },
 ];
+// console.log(pokemonChar);
 
 function generatePokemon() {
   const randPokemonIndex = Math.floor(Math.random() * pokemonChar.length);
@@ -145,7 +146,7 @@ function generatePokemon() {
   }
 }
 
-// Created a span function for the type of pokemon
+// Created a span function for the types/type of pokemon
 function createTypeSpan(type) {
   const typeSpan = document.createElement("span");
   typeSpan.innerHTML = type;
@@ -155,11 +156,3 @@ function createTypeSpan(type) {
 }
 
 generateBtn.addEventListener("click", generatePokemon);
-
-// text return function
-
-// function textReturn() {
-//   generateBtn.textContent = "Generate Pokemon";
-// }
-
-// close.addEventListener("click", textReturn);
