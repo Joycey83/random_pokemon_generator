@@ -27,3 +27,9 @@
   padding: 2rem;
   margin: 2rem auto;
 }
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
