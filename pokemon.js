@@ -108,6 +108,7 @@ let pokemonChar = [
     img: "resources/images/oddish.png",
     species: "Weed Pokémon",
     type: ["grass", "poison"],
+    stats: [45, 50, 60, 70],
   },
   {
     name: "Snorlax",
