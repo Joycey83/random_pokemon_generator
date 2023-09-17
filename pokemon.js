@@ -130,9 +130,13 @@ function generatePokemon() {
     ".pokemon-species"
   ).textContent = `Species: ${randPokemon.species}`;
 
+  // Clear any previous type spans
+  const typeContainer = document.querySelector(".pokemon-type");
+  typeContainer.innerHTML = "";
+
   // Handle cases where  there is more than one pokemon'type'
   if (Array.isArray(randPokemon.type)) {
-    randPokemon.type.forEach(type => {
+    randPokemon.type.forEach((type) => {
       const typeSpan = document.createElement("span");
       typeSpan.innerHTML = type;
       typeSpan.classList.add("pokemon-type-span"); // Add a class for styling
