@@ -35,9 +35,7 @@ button {
 
 button.btn-container {
   position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  /* display: flex;
+  display: flex;
   justify-content: center;
-  align-items: center; */
+  align-items: center;
 }
