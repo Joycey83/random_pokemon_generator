@@ -5,8 +5,7 @@ const generateBtn = document.querySelector("#generate-btn");
 const close = document.querySelector("#close-btn");
 // const typeSpan = document.createElement("span");
 const typeContainer = document.querySelector(".pokemon-type");
-// Clear any previous type spans
-typeContainer.innerHTML = "";
+
 // Arrays of objects that hold the pokemon characters information
 
 let pokemonChar = [
@@ -131,6 +130,9 @@ function generatePokemon() {
   document.querySelector(
     ".pokemon-species"
   ).textContent = `Species: ${randPokemon.species}`;
+  
+  // Clear any previous type spans
+  typeContainer.innerHTML = "";
 
   // Handle cases where  there is more than one pokemon'type'
   if (Array.isArray(randPokemon.type)) {
