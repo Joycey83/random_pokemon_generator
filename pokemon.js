@@ -3,8 +3,6 @@ const pokemonName = document.querySelector(".pokemon-name");
 const pokemonStats = document.querySelector(".stats-info");
 const generateBtn = document.querySelector("#generate-btn");
 const close = document.querySelector("#close-btn");
-
-// const typeSpan = document.createElement("span");
 const typeContainer = document.querySelector(".pokemon-type");
 
 // Arrays of objects that hold the pokemon characters information
@@ -134,11 +132,11 @@ function generatePokemon() {
 
   // Clear any previous type spans from the last image
   typeContainer.innerHTML = "";
-  
+
   // Handle cases where  there is more than one pokemon'type'
   if (Array.isArray(randPokemon.type)) {
-    const typeSpan = document.createElement("span");
     randPokemon.type.forEach((type) => {
+      const typeSpan = document.createElement("span");
       typeSpan.innerHTML = type;
       typeSpan.classList.add("pokemon-type-span"); // Add a class for styling
       typeContainer.appendChild(typeSpan);
