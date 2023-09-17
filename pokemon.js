@@ -136,17 +136,22 @@ function generatePokemon() {
   // Handle cases where  there is more than one pokemon'type'
   if (Array.isArray(randPokemon.type)) {
     randPokemon.type.forEach((type) => {
-      const typeSpan = document.createElement("span");
-      typeSpan.innerHTML = type;
-      typeSpan.classList.add("pokemon-type-span"); // Add a class for styling
-      typeContainer.appendChild(typeSpan);
+      typeSpan = createTypeSpan(type);
     });
   } else {
-    const typeSpan = document.createElement("span");
-    typeSpan.innerHTML = randPokemon.type;
-    typeSpan.classList.add("pokemon-type-span"); // Add a class for styling
+    // Add a class for styling
+    typeSpan = createTypeSpan(randPokemon.type);
     typeContainer.appendChild(typeSpan);
   }
+}
+
+// Created a span function for the type of pokemon
+function createTypeSpan(type) {
+  const typeSpan = document.createElement("span");
+  typeSpan.innerHTML = type;
+  typeSpan.classList.add("pokemon-type-span"); // Add a class for styling
+  typeContainer.appendChild(typeSpan);
+  return typeSpan;
 }
 
 generateBtn.addEventListener("click", generatePokemon);
