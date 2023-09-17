@@ -16,7 +16,7 @@ let pokemonChar = [
   },
   {
     name: "Cinccino",
-    img: "./resources/images/Cinccino.jpg",
+    img: "./resources/images/cinccino.png",
     species: "Scarf Pokémon",
     type: "normal",
   },
@@ -93,10 +93,10 @@ let pokemonChar = [
     type: ["bug", "steel"],
   },
   {
-    name: "",
+    name: "Nidoqueen",
     img: "resources/images/",
-    species: "",
-    type: "",
+    species: "Drill Pokémon",
+    type: ["poison", "ground"],
   },
   {
     name: "",
