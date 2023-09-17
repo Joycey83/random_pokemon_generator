@@ -1,6 +1,5 @@
 // These variables grab the HTML elements needed to interact with the DOM
 const pokemonName = document.querySelector(".pokemon-name");
-const pokemonStats = document.querySelector(".stats-info");
 const generateBtn = document.querySelector("#generate-btn");
 const close = document.querySelector("#close-btn");
 const typeContainer = document.querySelector(".pokemon-type");
