@@ -3,6 +3,9 @@
   margin: 0;
   box-sizing: border-box;
 }
+body {
+  height: 100%;
+}
 
 .pokemon-img {
   margin: 1.5rem auto;
@@ -24,7 +27,7 @@
 
 .pokemon-info-container {
   max-width: 650px;
-  /* background-color: aqua; */
+  background-color: aqua;
   padding: 1rem;
   margin: 0.5rem auto;
 }
@@ -35,8 +38,17 @@
   align-items: center;
 }
 
-.btn {
-  box-sizing: border-box;
-  padding: 0.5rem 0.2rem;
-  transition: all 0.2s ease;
+button {
+  padding: 10px 20px; /* Adjust values as needed */
+  margin: 0; /* Remove margin or set it as needed */
+  outline: none; /* Remove outline on focus */
+  box-sizing: border-box; /* Ensure padding and borders don't affect size */
+  transition: all 0.2s ease; /* Add a smooth transition on button properties */
 }
+
+
+
+
+/* .btn {
+  padding: 0.5rem 0.2rem;
+} */
