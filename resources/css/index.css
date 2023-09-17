@@ -20,3 +20,10 @@
   margin-right: 10px;
   border-radius: 5px;
 }
+
+.pokemon-info-container {
+  max-width: 650px;
+  background-color: aqua;
+  padding: 2rem;
+  margin: 2rem auto;
+}
