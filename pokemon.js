@@ -138,7 +138,7 @@ function generatePokemon() {
   // Handle cases where  there is more than one pokemon'type'
   if (Array.isArray(randPokemon.type)) {
     randPokemon.type.forEach((type) => {
-      typeSpan.innerHTML = randPokemon.type;
+      typeSpan.innerHTML = type;
       typeSpan.classList.add("pokemon-type-span"); // Add a class for styling
       typeContainer.appendChild(typeSpan);
     });
