@@ -11,9 +11,7 @@ body {
 }
 
 .bg-image {
-  background: linear-gradient(0deg, rgba(11, 10, 9, 0.627), rgba(11, 7, 0, 0.757)),
-    url(../images/evil-pokemon.jpg);
-  /* background-image: url(../images/pokemon-bg.jpg); */
+  background: rgba(11, 6, 15, 0.534);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
