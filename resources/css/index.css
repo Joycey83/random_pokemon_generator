@@ -11,7 +11,7 @@ body {
 }
 
 .bg-image {
-  background: rgba(11, 6, 15, 0.534);
+  background-image: linear-gradient(180deg, red, yellow);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
