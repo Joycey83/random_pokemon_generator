@@ -6,7 +6,7 @@ let bgImg = [
   "./resources/images/evil-pokemon.jpg",
 ];
 
-const backgroundImg = document.querySelector("bg-image"); // Access the DOM body element
+const backgroundImg = document.querySelector(".bg-image"); // Access the DOM body element
 
 function showChangeImg() {
   const bgImgRandoIndex = Math.floor(Math.random() * bgImg.length); // random images choosen
