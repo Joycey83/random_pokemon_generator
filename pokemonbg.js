@@ -12,9 +12,9 @@ function showChangeImg() {
   const bgImgRandoIndex = Math.floor(Math.random() * bgImg.length); // random images choosen
   //   Access the random pokemon images by index
   const randoImage = bgImg[bgImgRandoIndex];
-    // Create a linear gradient overlay
-    const gradientOverlay = "linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5))";
-//   setting the random background images
-backgroundImg.style.backgroundImage = `url('${gradientOverlay} ${randoImage}')`;
+  // Create a linear gradient overlay
+  const gradientOverlay = "linear-gradient(55deg, rgba(13, 10, 10, 0.736) 0%, rgba(15, 14, 14, 0.329) 100%)";
+  //   setting the random background images
+  backgroundImg.style.backgroundImage = `${gradientOverlay}, url(' ${randoImage}')`;
 }
 setInterval(showChangeImg, 2000); // time delay for each images
