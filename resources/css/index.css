@@ -20,7 +20,7 @@ body {
 .pokemon-name {
   font-size: 3rem;
   text-align: center;
-  color: aliceblue;
+  color: rgb(21, 98, 166);
   text-transform: uppercase;
   letter-spacing: 2px;
 }
