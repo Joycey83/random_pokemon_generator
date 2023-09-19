@@ -187,6 +187,12 @@ function createColorSpan(type) {
       return "fighting-type";
     case "ghost":
       return "ghost-type";
+    case "dark":
+      return "dark-type";
+    case "steel":
+      return "steel-type";
+    case "dragon":
+      return "dragon-type";
   }
 }
 
