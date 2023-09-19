@@ -17,4 +17,4 @@ function showChangeImg() {
   //   setting the random background images
   backgroundImg.style.backgroundImage = `${gradientOverlay}, url(' ${randoImage}')`;
 }
-setInterval(showChangeImg, 1500); // time delay for each images
+setInterval(showChangeImg, 2300); // time delay for each images
