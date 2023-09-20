@@ -116,6 +116,42 @@ let pokemonChar = [
     species: "Sleeping Pokémon",
     type: "normal",
   },
+  {
+    name: "Poliwrath",
+    img: "resources/images/poliwrath.png",
+    species: "Tadpole Pokémon",
+    type: ["water", "fighting"],
+  },
+  {
+    name: "Golem",
+    img: "resources/images/Golem.png",
+    species: "Megaton Pokémon",
+    type: ["rock", "ground"],
+  },
+  {
+    name: "Articuno",
+    img: "resources/images/Articuno.png",
+    species: "Freeze Pokémon",
+    type: ["ice", "flying"],
+  },
+  {
+    name: "Zapdos",
+    img: "resources/images/Zapdos.png",
+    species: "Electric Pokémon",
+    type: ["electric", "flying"],
+  },
+  {
+    name: "",
+    img: "resources/images/",
+    species: "",
+    type: ["ice", "flying"],
+  },
+  {
+    name: "",
+    img: "resources/images/",
+    species: "",
+    type: ["ice", "flying"],
+  },
 ];
 // console.log(pokemonChar);
 

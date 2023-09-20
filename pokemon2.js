@@ -15,7 +15,7 @@ let bgImg = [
 
 const backgroundImg = document.querySelector(".bg-image"); // Access the DOM body element
 
-// Preload images
+// Preload images to stop white flashing effect of re-rendering between browsers
 const imageObjects = bgImg.map((src) => {
   const img = new Image();
   img.src = src;
