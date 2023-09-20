@@ -15,6 +15,13 @@ let bgImg = [
 
 const backgroundImg = document.querySelector(".bg-image"); // Access the DOM body element
 
+// Preload images
+const imageObjects = bgImg.map((src) => {
+  const img = new Image();
+  img.src = src;
+  return img;
+});
+
 function showChangeImg() {
   const bgImgRandoIndex = Math.floor(Math.random() * bgImg.length); // random images choosen
   //   Access the random pokemon images by index
