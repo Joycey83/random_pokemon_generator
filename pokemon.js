@@ -138,10 +138,12 @@ function generatePokemon() {
   if (Array.isArray(randPokemon.type)) {
     randPokemon.type.forEach((type) => {
       typeSpan = createTypeSpan(type);
+      typeSpan.classList.add(createColorSpan(type));
     });
   } else {
     // Add a class for styling
     typeSpan = createTypeSpan(randPokemon.type);
+    typeSpan.classList.add(createColorSpan(randPokemon.type));
     typeContainer.appendChild(typeSpan);
   }
 }
@@ -154,6 +156,7 @@ function createTypeSpan(type) {
   typeContainer.appendChild(typeSpan);
   return typeSpan;
 }
+
 // create a color span for the pokemon type
 function createColorSpan(type) {
   switch (type.toLowerCase()) {
@@ -193,6 +196,8 @@ function createColorSpan(type) {
       return "steel-type";
     case "dragon":
       return "dragon-type";
+    default:
+      return "pokemon-type-span";
   }
 }
 
