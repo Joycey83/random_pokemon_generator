@@ -8,6 +8,9 @@ let bgImg = [
   "./resources/images/fighting-scene2.jpg",
   "./resources/images/pokemon-bg.jpg",
   "./resources/images/pokemon-bg1.jpg",
+  "./resources/images/pokemon-bg2.jpg",
+  "./resources/images/pokemon-bg3.jpg",
+  "./resources/images/pokemon-4.jpg",
 ];
 
 const backgroundImg = document.querySelector(".bg-image"); // Access the DOM body element
