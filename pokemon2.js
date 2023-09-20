@@ -6,7 +6,8 @@ let bgImg = [
   "./resources/images/evil-pokemon.jpg",
   "./resources/images/fighting-scene.png",
   "./resources/images/fighting-scene2.jpg",
-  "./resources/images/fighting-scene3.jpg",
+  "./resources/images/pokemon-bg.jpg",
+  "./resources/images/pokemon-bg1.jpg",
 ];
 
 const backgroundImg = document.querySelector(".bg-image"); // Access the DOM body element
@@ -16,7 +17,8 @@ function showChangeImg() {
   //   Access the random pokemon images by index
   const randoImage = bgImg[bgImgRandoIndex];
   // Create a linear gradient overlay
-  const gradientOverlay = "linear-gradient(55deg, rgba(13, 10, 10, 0.736) 0%, rgba(15, 14, 14, 0.329) 100%)";
+  const gradientOverlay =
+    "linear-gradient(55deg, rgba(13, 10, 10, 0.736) 0%, rgba(15, 14, 14, 0.329) 100%)";
   //   setting the random background images
   backgroundImg.style.backgroundImage = `${gradientOverlay}, url(' ${randoImage}')`;
 }
