@@ -141,16 +141,22 @@ let pokemonChar = [
     type: ["electric", "flying"],
   },
   {
-    name: "",
-    img: "resources/images/",
-    species: "",
-    type: ["ice", "flying"],
+    name: "Salamence",
+    img: "resources/images/Salamence.png",
+    species: "Dragon Pokémon",
+    type: ["dragon", "flying"],
   },
   {
-    name: "",
-    img: "resources/images/",
-    species: "",
-    type: ["ice", "flying"],
+    name: "Rayquaza",
+    img: "resources/images/Rayquaza.png",
+    species: "Sky High Pokémon",
+    type: ["dragon", "flying"],
+  },
+  {
+    name: "Metang",
+    img: "resources/images/metang.png",
+    species: "Iron Claw Pokémon",
+    type: ["steel", "psychic"],
   },
 ];
 // console.log(pokemonChar);
