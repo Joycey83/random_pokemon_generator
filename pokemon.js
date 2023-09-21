@@ -202,19 +202,19 @@ let pokemonChar = [
     type: ["bug", "steel"],
   },
   {
-    name: "",
-    img: "resources/images/",
-    species: "",
-    type: ["", ""],
+    name: "Vanillish",
+    img: "resources/images/Vanillish.png",
+    species: "Icy Snow Pokémon",
+    type: "ice",
   },
   {
-    name: "",
-    img: "resources/images/",
-    species: "",
-    type: ["", ""],
+    name: "Ferroseed",
+    img: "resources/images/ferroseed.png",
+    species: "Thorn Seed Pokémon",
+    type: ["grass", "steel"],
   },
 ];
-// console.log(pokemonChar);
+console.log(pokemonChar);
 
 function generatePokemon() {
   const randPokemonIndex = Math.floor(Math.random() * pokemonChar.length);
