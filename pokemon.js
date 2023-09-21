@@ -158,6 +158,61 @@ let pokemonChar = [
     species: "Iron Claw Pokémon",
     type: ["steel", "psychic"],
   },
+
+  {
+    name: "Torterra",
+    img: "resources/images/torterra.png",
+    species: "Continent Pokémon",
+    type: ["grass", "ground"],
+  },
+  {
+    name: "Empoleon",
+    img: "resources/images/empoleon.png",
+    species: "Emperor Pokémon",
+    type: ["water", "steel"],
+  },
+  {
+    name: "Combee",
+    img: "resources/images/combee.png",
+    species: "Tiny Bee Pokémon",
+    type: ["bug", "flying"],
+  },
+  {
+    name: "Stunky",
+    img: "resources/images/stunky.png",
+    species: "Skunk Pokémon",
+    type: ["poison", "dark"],
+  },
+  {
+    name: "Scolipede",
+    img: "resources/images/scolipede.webp",
+    species: "Megapede Pokémon",
+    type: ["bug", "poison"],
+  },
+  {
+    name: "Zoroark",
+    img: "resources/images/Zoroark.png",
+    species: "Illusion Fox Pokémon",
+    type: "dark",
+  },
+  {
+    name: "Escavalier",
+    img: "resources/images/Escavalier.png",
+    species: "Cavalry Pokémon",
+    type: ["bug", "steel"],
+  },
+  {
+    name: "",
+    img: "resources/images/",
+    species: "",
+    type: ["", ""],
+  },
+  {
+    name: "",
+    img: "resources/images/",
+    species: "",
+    type: ["", ""],
+  },
 ];
 // console.log(pokemonChar);
 
