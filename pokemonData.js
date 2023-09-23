@@ -1,4 +1,4 @@
-const pokemonChar = [
+let pokemonChar = [
   {
     name: "Dedenne",
     img: "./resources/images/Dedenne.png",
