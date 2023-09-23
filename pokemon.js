@@ -1,3 +1,5 @@
+import pokemonChar from "./pokemonData.js";
+
 // These variables grab the HTML elements needed to interact with the DOM
 const pokemonName = document.querySelector(".pokemon-name");
 const generateBtn = document.querySelector("#generate-btn");
@@ -5,8 +7,6 @@ const close = document.querySelector("#close-btn");
 const typeContainer = document.querySelector(".pokemon-type");
 
 // Arrays of objects that hold the pokemon characters information
-
-
 
 function generatePokemon() {
   const randPokemonIndex = Math.floor(Math.random() * pokemonChar.length);
