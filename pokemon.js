@@ -26,12 +26,13 @@ function generatePokemon() {
   // Handle cases where  there is more than one pokemon'type'
   if (Array.isArray(randPokemon.type)) {
     randPokemon.type.forEach((type) => {
-      typeSpan = createTypeSpan(type);
+      // Declare typeSpan here to make it local to the forEach loop
+      const typeSpan = createTypeSpan(type);
       typeSpan.classList.add(createColorSpan(type));
     });
   } else {
     // Add a class for styling
-    typeSpan = createTypeSpan(randPokemon.type);
+    const typeSpan = createTypeSpan(randPokemon.type);
     typeSpan.classList.add(createColorSpan(randPokemon.type));
     typeContainer.appendChild(typeSpan);
   }
