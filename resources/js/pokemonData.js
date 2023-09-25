@@ -205,6 +205,31 @@ let pokemonChar = [
     species: "Thorn Seed Pokémon",
     type: ["grass", "steel"],
   },
+
+  {
+    name: "Tyrunt",
+    img: "resources/images/Tyrunt.png",
+    species: "",
+    type: "",
+  },
+  {
+    name: "Klinklang",
+    img: "resources/images/Klinklang.png",
+    species: "",
+    type: "",
+  },
+  {
+    name: "Golurk",
+    img: "resources/images/Golurk.png",
+    species: "",
+    type: "",
+  },
+  {
+    name: "Zekrom",
+    img: "resources/images/zekrom.png",
+    species: "",
+    type: "",
+  },
 ];
 
 export default pokemonChar;
