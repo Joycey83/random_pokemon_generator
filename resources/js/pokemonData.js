@@ -277,24 +277,6 @@ let pokemonChar = [
   },
 ];
 
-// Function to create a span for a stat
-function createStatSpan(statName, statValue) {
-  const statSpan = document.createElement("span");
-  statSpan.textContent = `${statName}: ${statValue}`;
-  return statSpan;
-}
 
-// Loop through each Pokemon and add stat spans
-pokemonChar.forEach((pokemon) => {
-  const statContainer = document.createElement("div");
-
-  for (const stat in pokemon.stats) {
-    const statValue = pokemon.stats[stat];
-    const statSpan = createStatSpan(stat, statValue);
-    statContainer.appendChild(statSpan);
-  }
-
-  pokemon.stats.spans = statContainer.children;
-});
 
 export default pokemonChar;

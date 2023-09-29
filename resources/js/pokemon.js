@@ -91,6 +91,14 @@ function createColorSpan(type) {
   }
 }
 
+function createStatsInfo(pokemon) {
+  const infoContainer = document.createElement("div");
+  statsElement.className = "stats-span";
 
+  const statsElement = document.createElement("span");
+  statsElement.textContent = `Stats: ${pokemon.stats}`;
+
+  infoContainer.appendChild(statsElement);
+}
 
 generateBtn.addEventListener("click", generatePokemon);
