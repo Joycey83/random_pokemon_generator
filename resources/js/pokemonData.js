@@ -279,7 +279,7 @@ let pokemonChar = [
 
 function createStatsInfo(pokemon) {
   const infoContainer = document.createElement("div");
-  infoContainer.className = "stats-span"; // Use infoContainer here
+  infoContainer.className = "stats-span"; 
 
   const statsElement = document.createElement("span");
   statsElement.textContent = `Stats: ${pokemon.stats}`;
