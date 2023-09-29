@@ -101,4 +101,9 @@ function createStatsInfo(pokemon) {
   infoContainer.appendChild(statsElement);
 }
 
+// Loop through your pokemonChar array and call createPokemonCard for each Pokémon
+pokemonChar.forEach((pokemon) => {
+  createStatsInfo(pokemon);
+});
+
 generateBtn.addEventListener("click", generatePokemon);
