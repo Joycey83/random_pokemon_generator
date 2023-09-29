@@ -284,7 +284,7 @@ function createStatsInfo(pokemon) {
   const statsElement = document.createElement("span");
   statsElement.textContent = `Stats: ${pokemon.stats}`;
 
-  infoContainer.appendChild(statsElement);
+  // infoContainer.appendChild(statsElement);
 }
 
 const pokemonInfoContainer = document.getElementById("pokemon-info");
