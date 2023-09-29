@@ -322,6 +322,31 @@ let pokemonChar = [
   },
 ];
 
+function createStatsInfo(pokemon) {
+  const infoContainer = document.createElement("div");
+  infoContainer.className = "pokemon-stats";
 
+  const statsList = document.createElement("ul");
+  statsList.className = "stats-list";
+
+  // Loop through the stats and create list items
+  pokemon.stats.forEach((stat) => {
+    const statItem = document.createElement("li");
+    statItem.textContent = stat;
+    statsList.appendChild(statItem);
+  });
+
+  infoContainer.appendChild(statsList);
+
+  return infoContainer; // Return the infoContainer element
+}
+
+const pokemonContainer = document.getElementById("pokemon-stats-container");
+
+// Loop through your pokemonChar array and call createStatsInfo for each Pokémon
+pokemonChar.forEach((pokemon) => {
+  const infoContainer = createStatsInfo(pokemon);
+  pokemonContainer.appendChild(infoContainer);
+});
 
 export default pokemonChar;
