@@ -91,19 +91,5 @@ function createColorSpan(type) {
   }
 }
 
-function createStatsInfo(pokemon) {
-  const infoContainer = document.createElement("div");
-  statsElement.className = "stats-span";
-
-  const statsElement = document.createElement("span");
-  statsElement.textContent = `Stats: ${pokemon.stats}`;
-
-  infoContainer.appendChild(statsElement);
-}
-
-// Loop through your pokemonChar array and call createPokemonCard for each Pokémon
-pokemonChar.forEach((pokemon) => {
-  createStatsInfo(pokemon);
-});
 
 generateBtn.addEventListener("click", generatePokemon);
