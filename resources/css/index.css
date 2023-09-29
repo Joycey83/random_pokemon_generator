@@ -45,10 +45,11 @@ body {
   padding: 1rem;
 }
 .pokemon-type-span {
+  display: inline-block;
   background-color: #ffc40c;
   color: #0f0e0e;
   padding: 5px 10px;
-  margin-right: 10px;
+  margin: 0.3rem 0.2rem;
   border-radius: 5px;
 }
 
@@ -72,10 +73,11 @@ body {
 }
 
 .btn {
+  position: relative;
+  left: 450px;
   border: none;
   border-radius: 5px;
   padding: 2rem;
-  background-color: aquamarine;
   cursor: pointer;
 }
 
@@ -260,13 +262,8 @@ body {
   border-radius: 5px;
 }
 
-.stats-span {
-  color: whitesmoke;
-}
-
 /* Pokemon stats */
 
 .pokemon-stats {
-  background-color: #8b0000;
-  margin: 1rem;
+  margin-bottom: 0.2rem;
 }
