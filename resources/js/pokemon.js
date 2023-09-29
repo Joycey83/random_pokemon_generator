@@ -44,10 +44,12 @@ function generatePokemon() {
   // Clear any previous stats spans
   statsInfoContainer.innerHTML = "";
   // Create and append stats spans
-  for (const stat in randPokemon.stats) {
-    const statValue = randPokemon.stats[stat];
-    const statsSpan = createStatTypeSpan(`${stat + 1}: ${statValue}`);
-    statsSpan.classList.add(createColorSpan(stat));
+  for (const statName in randPokemon.stats) {
+    if (randPokemon.stats.hasOwnProperty(statName)) {
+      const statValue = randPokemon.stats[statName];
+      const statsSpan = createStatTypeSpan(`${statName}: ${statValue}`);
+      statsSpan.classList.add(createColorSpan(statName));
+    }
   }
 }
 
