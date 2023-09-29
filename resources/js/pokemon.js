@@ -47,7 +47,7 @@ function generatePokemon() {
   for (const statName in randPokemon.stats) {
     if (randPokemon.stats.hasOwnProperty(statName)) {
       const statValue = randPokemon.stats[statName];
-      const statsSpan = createStatTypeSpan(`${statName}: ${statValue}`);
+      const statsSpan = createStatTypeSpan(`${statName} : ${statValue}`);
       statsSpan.classList.add(createColorSpan(statName));
       statsInfoContainer.appendChild(statsSpan);
     }
