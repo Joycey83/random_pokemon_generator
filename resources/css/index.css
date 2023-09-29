@@ -42,6 +42,7 @@ body {
 }
 .pokemon-type {
   margin-top: 1rem;
+  padding: 1rem;
 }
 .pokemon-type-span {
   background-color: #ffc40c;
