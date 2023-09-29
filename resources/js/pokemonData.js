@@ -294,7 +294,7 @@ pokemonChar.forEach((pokemon) => {
     statContainer.appendChild(statSpan);
   }
 
-  pokemon.stats.span = statContainer.innerHTML;
+  pokemon.stats.spans = statContainer.children;
 });
 
 export default pokemonChar;
