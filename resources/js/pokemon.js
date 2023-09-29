@@ -49,6 +49,7 @@ function generatePokemon() {
       const statValue = randPokemon.stats[statName];
       const statsSpan = createStatTypeSpan(`${statName}: ${statValue}`);
       statsSpan.classList.add(createColorSpan(statName));
+      statsInfoContainer.appendChild(statsSpan);
     }
   }
 }
