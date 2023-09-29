@@ -287,9 +287,12 @@ function createStatsInfo(pokemon) {
   infoContainer.appendChild(statsElement);
 }
 
-// Loop through your pokemonChar array and call createPokemonCard for each Pokémon
+const pokemonInfoContainer = document.getElementById("pokemon-info");
+
+// Loop through your pokemonChar array and call createStatsInfo for each Pokémon
 pokemonChar.forEach((pokemon) => {
-  createStatsInfo(pokemon);
+  const infoContainer = createStatsInfo(pokemon);
+  pokemonInfoContainer.appendChild(infoContainer);
 });
 
 export default pokemonChar;
