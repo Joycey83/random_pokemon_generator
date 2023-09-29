@@ -322,22 +322,6 @@ let pokemonChar = [
   },
 ];
 
-function createStatsInfo(pokemon) {
-  const infoContainer = document.createElement("div");
-  infoContainer.className = "stats-span";
 
-  const statsElement = document.createElement("span");
-  statsElement.textContent = `Stats: ${pokemon.stats}`;
-
-  // infoContainer.appendChild(statsElement);
-}
-
-const pokemonInfoContainer = document.getElementById("pokemon-info");
-
-// Loop through your pokemonChar array and call createStatsInfo for each Pokémon
-pokemonChar.forEach((pokemon) => {
-  const infoContainer = createStatsInfo(pokemon);
-  pokemonInfoContainer.appendChild(infoContainer);
-});
 
 export default pokemonChar;
