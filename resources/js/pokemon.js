@@ -5,6 +5,7 @@ const pokemonName = document.querySelector(".pokemon-name");
 const generateBtn = document.querySelector("#generate-btn");
 const close = document.querySelector("#close-btn");
 const typeContainer = document.querySelector(".pokemon-type");
+const statsInfoContainer = document.querySelector(".pokemon-stats");
 
 // Arrays of objects that hold the pokemon characters information
 
@@ -39,8 +40,25 @@ function generatePokemon() {
     typeSpan.classList.add(createColorSpan(randPokemon.type));
     typeContainer.appendChild(typeSpan);
   }
+
+  // Clear any previous stats spans
+  statsInfoContainer.innerHTML = "";
+  // Create and append stats spans
+  for (const stat in randPokemon.stats) {
+    const statValue = randPokemon.stats[stat];
+    const statsSpan = createStatTypeSpan(`${stat + 1}: ${statValue}`);
+    statsSpan.classList.add(createColorSpan(stat));
+  }
 }
 
+// Created a span function for the stats of the pokemon
+function createStatTypeSpan(statType) {
+  const statsSpan = document.createElement("span");
+  statsSpan.innerHTML = statType;
+  statsSpan.classList.add("pokemon-stats-span");
+  statsInfoContainer.appendChild(statsSpan);
+  return statsSpan;
+}
 // Created a span function for the types/type of pokemon
 function createTypeSpan(type) {
   const typeSpan = document.createElement("span");
