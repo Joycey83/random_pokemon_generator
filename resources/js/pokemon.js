@@ -19,6 +19,9 @@ function generatePokemon() {
   document.querySelector(
     ".pokemon-species"
   ).textContent = `Species: ${randPokemon.species}`;
+  document.querySelector(
+    ".pokemon-stats"
+  ).textContent = `Stats: ${randPokemon.stats}`;
 
   // Clear any previous type spans from the last image
   typeContainer.innerHTML = "";
@@ -90,6 +93,5 @@ function createColorSpan(type) {
       return "pokemon-type-span";
   }
 }
-
 
 generateBtn.addEventListener("click", generatePokemon);
