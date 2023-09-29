@@ -262,3 +262,10 @@ body {
 .stats-span {
   color: whitesmoke;
 }
+
+/* Pokemon stats */
+
+.pokemon-stats {
+  background-color: #8b0000;
+  margin: 1rem;
+}
