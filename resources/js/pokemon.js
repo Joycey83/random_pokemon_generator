@@ -66,7 +66,6 @@ function createStatTypeSpan(statType) {
 function createTypeSpan(type) {
   const typeSpan = document.createElement("span");
   typeSpan.innerHTML = type;
-  typeSpan.classList.add("pokemon-type-span"); // Add a class for styling
   typeContainer.appendChild(typeSpan);
   return typeSpan;
 }
