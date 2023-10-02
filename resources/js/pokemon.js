@@ -58,7 +58,6 @@ function generatePokemon() {
 function createStatTypeSpan(statType) {
   const statsSpan = document.createElement("span");
   statsSpan.innerHTML = statType;
-  statsSpan.classList.add("pokemon-stats-span");
   statsInfoContainer.appendChild(statsSpan);
   return statsSpan;
 }
