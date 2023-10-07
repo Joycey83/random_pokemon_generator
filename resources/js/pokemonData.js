@@ -580,7 +580,7 @@ let pokemonChar = [
   },
   {
     name: "Mewtwo",
-    img: "resources/images/",
+    img: "resources/images/Mewtwo.png",
     species: "Genetic Pokémon",
     type: "psychic",
     stats: {
