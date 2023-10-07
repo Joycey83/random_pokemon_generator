@@ -595,7 +595,7 @@ let pokemonChar = [
   },
   {
     name: "Arceus",
-    img: "resources/images/",
+    img: "resources/images/arceus.png",
     species: "Alpha Pokémon",
     type: "normal",
     stats: {
