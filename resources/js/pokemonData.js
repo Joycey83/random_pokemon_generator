@@ -515,14 +515,23 @@ let pokemonChar = [
   {
     name: "Tyrunt",
     img: "resources/images/Tyrunt.png",
-    species: "",
-    type: "",
+    species: "Royal Heir Pokémon",
+    type: ["rock", "dragon"],
+    stats: {
+      HP: 58,
+      Attack: 89,
+      Defense: 77,
+      "Sp.Atk": 45,
+      "Sp.Def": 45,
+      Speed: 48,
+      Total: 362,
+    },
   },
   {
     name: "Klinklang",
     img: "resources/images/Klinklang.png",
-    species: "",
-    type: "",
+    species: "Gear Pokémon",
+    type: "steel",
     stats: {
       HP: 60,
       Attack: 100,
