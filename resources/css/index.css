@@ -28,7 +28,7 @@ body {
 .pokemon-img {
   margin: 1.5rem auto;
   display: block;
-  width: 300px;
+  width: 250px;
 }
 
 #close-btn {
@@ -62,7 +62,7 @@ body {
 }
 
 .info-wrapper {
-  margin-bottom: 3rem;
+  margin-bottom: 5rem;
 }
 
 .btn-container {
