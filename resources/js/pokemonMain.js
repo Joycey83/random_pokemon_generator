@@ -59,6 +59,9 @@ function createStatTypeSpan(statType) {
   const statsSpan = document.createElement("span");
   statsSpan.innerHTML = statType;
   statsInfoContainer.appendChild(statsSpan);
+  // Inside the loop where you create stats spans
+  statsSpan.classList.add(createColorSpan(statName, hpLevel));
+
   return statsSpan;
 }
 
