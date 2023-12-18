@@ -48,7 +48,7 @@ function generatePokemon() {
     if (randPokemon.stats.hasOwnProperty(statName)) {
       const statValue = randPokemon.stats[statName];
       const statsSpan = createStatTypeSpan(`${statName} : ${statValue}`);
-      statsSpan.classList.add(createColorSpan(statType)); // PlaceHolder stats Color
+      statsSpan.classList.add(createColorSpan(statName)); // PlaceHolder stats Color
       statsInfoContainer.appendChild(statsSpan);
     }
   }
@@ -58,7 +58,7 @@ function generatePokemon() {
 function createStatTypeSpan(statType) {
   const statsSpan = document.createElement("span");
   statsSpan.innerHTML = statType;
-  statsSpan.classList.add(createColorSpan(statType)); // Use statType instead of statName
+  statsSpan.classList.add(createColorSpan(statType));
   statsInfoContainer.appendChild(statsSpan);
   return statsSpan;
 }

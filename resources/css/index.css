@@ -280,26 +280,26 @@ body {
   background-color: #a0e515;
 } */
 
-.yellow {
+.hp-type {
   background-color: #ffdd57;
 }
 
-.orange {
+.attack-type {
   background-color: #ff7f0f;
 }
 
-.red {
+.defense-type {
   background-color: #f34444;
 }
 
-.green {
+.sp-atk-type {
   background-color: #008000;
 }
 
-.purple {
+.sp-def-type {
   background-color: purple;
 }
 
-.blue {
+.speed-type {
   background-color: blue;
 }
