@@ -9,16 +9,26 @@ const statsColor = {
   red: "#F34444",
 };
 
-// Create a function to get the CSS class for a given type
-function getStatsColor(type) {
-  return statsColor[type.toLowerCase()] || "pokemon-type-span";
+function getStatsColor(hpLevel) {
+  if (hpLevel <= 20) {
+    return statsColor.red; // Red for low HP
+  } else if (hpLevel <= 40) {
+    return statsColor.orange; //
+  } else if (hpLevel <= 30) {
+    return statsColor.yellow;
+  } else if (hpLevel <= 60) {
+    return statsColor["lgt-green"];
+  } else if (hpLevel <= 70) {
+    return statsColor["mid-green"];
+  } else {
+    return statsColor["drk-green"]; // Dark green for high HP
+  }
 }
 
-// Usage in your code
-function createColorSpan(type) {
-  const ColorTypeSpan = document.createElement("span");
-  ColorTypeSpan.innerHTML = type;
-  ColorTypeSpan.classList.add("pokemon-type-span", getStatsColor(type));
-  statsInfoContainer.appendChild(ColorTypeSpan);
-  return ColorTypeSpan;
+function createColorSpan(type, hpLevel) {
+  const colorTypeSpan = document.createElement("span");
+  colorTypeSpan.innerHTML = type;
+  colorTypeSpan.classList.add("pokemon-type-span", getStatsColor(hpLevel));
+  statsInfoContainer.appendChild(colorTypeSpan);
+  return colorTypeSpan;
 }
