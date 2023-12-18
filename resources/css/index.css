@@ -278,7 +278,7 @@ body {
 
 .lgt-green {
   background-color: #a0e515;
-}
+} */
 
 .yellow {
   background-color: #ffdd57;
@@ -290,4 +290,16 @@ body {
 
 .red {
   background-color: #f34444;
-} */
+}
+
+.green {
+  background-color: #008000;
+}
+
+.purple {
+  background-color: purple;
+}
+
+.blue {
+  background-color: blue;
+}

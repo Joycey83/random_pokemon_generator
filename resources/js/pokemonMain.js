@@ -58,10 +58,9 @@ function generatePokemon() {
 function createStatTypeSpan(statType) {
   const statsSpan = document.createElement("span");
   statsSpan.innerHTML = statType;
-  statsInfoContainer.appendChild(statsSpan);
   // Inside the loop where you create stats spans
-  statsSpan.classList.add(createColorSpan(statName, hpLevel));
-
+  statsSpan.classList.add(createColorSpan(statName));
+  statsInfoContainer.appendChild(statsSpan);
   return statsSpan;
 }
 
