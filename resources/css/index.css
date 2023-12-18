@@ -267,3 +267,27 @@ body {
 .pokemon-stats {
   margin-bottom: 0.2rem;
 }
+
+.drk-green {
+  background-color: #00c2b8;
+}
+
+.mid-green {
+  background-color: #23cd5e;
+}
+
+.lgt-green {
+  background-color: #a0e515;
+}
+
+.yellow {
+  background-color: #ffdd57;
+}
+
+.orange {
+  background-color: #ff7f0f;
+}
+
+.red {
+  background-color: #f34444;
+}
