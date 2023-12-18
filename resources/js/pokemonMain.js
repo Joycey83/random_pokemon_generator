@@ -1,4 +1,5 @@
 import pokemonChar from "./pokemonData.js";
+import createStatColorSpan from "./pokemonStatsColor.js";
 
 // These variables grab the HTML elements needed to interact with the DOM
 const pokemonName = document.querySelector(".pokemon-name");
@@ -71,18 +72,18 @@ function createTypeSpan(type) {
   return typeSpan;
 }
 
-function createStatColorSpan(statType) {
-  const statColors = {
-    hp: "hp-type",
-    attack: "attack-type",
-    defense: "defense-type",
-    "sp.atk": "sp-atk-type",
-    "sp.def": "sp-def-type",
-    speed: "speed-type",
-  };
+// function createStatColorSpan(statType) {
+//   const statColors = {
+//     hp: "hp-type",
+//     attack: "attack-type",
+//     defense: "defense-type",
+//     "sp.atk": "sp-atk-type",
+//     "sp.def": "sp-def-type",
+//     speed: "speed-type",
+//   };
 
-  return statColors[statType.toLowerCase()] || "pokemon-type-span";
-}
+//   return statColors[statType.toLowerCase()] || "pokemon-type-span";
+// }
 
 // create a color span for the pokemon type
 function createColorSpan(type) {
