@@ -54,12 +54,11 @@ function generatePokemon() {
   }
 }
 
-// Created a span function for the stats of the pokemon
+// Updated createStatTypeSpan function to use statType instead of statName
 function createStatTypeSpan(statType) {
   const statsSpan = document.createElement("span");
   statsSpan.innerHTML = statType;
-  // Inside the loop where you create stats spans
-  statsSpan.classList.add(createColorSpan(statName));
+  statsSpan.classList.add(createColorSpan(statType)); // Use statType instead of statName
   statsInfoContainer.appendChild(statsSpan);
   return statsSpan;
 }
