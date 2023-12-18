@@ -71,6 +71,19 @@ function createTypeSpan(type) {
   return typeSpan;
 }
 
+function createStatColorSpan(statType) {
+  const statColors = {
+    hp: "hp-type",
+    attack: "attack-type",
+    defense: "defense-type",
+    "sp.atk": "sp-atk-type",
+    "sp.def": "sp-def-type",
+    speed: "speed-type",
+  };
+
+  return statColors[statType.toLowerCase()] || "pokemon-type-span";
+}
+
 // create a color span for the pokemon type
 function createColorSpan(type) {
   switch (type.toLowerCase()) {
