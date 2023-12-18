@@ -13,15 +13,15 @@ function getStatsColor(hpLevel) {
   if (hpLevel <= 20) {
     return statsColor.red; // Red for low HP
   } else if (hpLevel <= 40) {
-    return statsColor.orange; //
-  } else if (hpLevel <= 30) {
-    return statsColor.yellow;
+    return statsColor.orange; // Orange for moderate HP
   } else if (hpLevel <= 60) {
-    return statsColor["lgt-green"];
+    return statsColor.yellow; // Yellow for moderate HP
   } else if (hpLevel <= 70) {
-    return statsColor["mid-green"];
+    return statsColor["lgt-green"]; // Light green for low high HP
+  } else if (hpLevel <= 80) {
+    return statsColor["mid-green"]; // Mid green for high HP
   } else {
-    return statsColor["drk-green"]; // Dark green for high HP
+    return statsColor["drk-green"]; // Dark green for very high HP
   }
 }
 
