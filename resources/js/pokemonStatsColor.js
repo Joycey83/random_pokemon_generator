@@ -11,12 +11,12 @@ const statsColor = {
 
 // Create a function to get the CSS class for a given type
 function getStatsColor(type) {
-  return statsColor[type.toLowerCase()] || "pokemon-type-span"; // corrected toLowerCase
+  return statsColor[type.toLowerCase()] || "pokemon-type-span";
 }
 
 // Usage in your code
 function createColorSpan(type) {
-  const ColorTypeSpan = document.createElement("span"); // corrected "color-span" to "span"
+  const ColorTypeSpan = document.createElement("span");
   ColorTypeSpan.innerHTML = type;
   ColorTypeSpan.classList.add("pokemon-type-span", getStatsColor(type));
   statsInfoContainer.appendChild(ColorTypeSpan);
