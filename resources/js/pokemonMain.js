@@ -72,6 +72,8 @@ function createTypeSpan(type) {
   return typeSpan;
 }
 
+// File was getting too squashed up with code, so created external file and imported this function
+
 // function createStatColorSpan(statType) {
 //   const statColors = {
 //     hp: "hp-type",
