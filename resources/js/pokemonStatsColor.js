@@ -10,3 +10,5 @@ function createStatColorSpan(statType) {
 
   return statColors[statType.toLowerCase()] || "pokemon-type-span";
 }
+
+export default createStatColorSpan;
