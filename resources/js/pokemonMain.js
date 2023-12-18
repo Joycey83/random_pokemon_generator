@@ -15,7 +15,7 @@ function generatePokemon() {
   //   Access the random pokemon characters by index
   const randPokemon = pokemonChar[randPokemonIndex];
 
-  // Update DOM elements with Pokémon information
+  // Update DOM elements with Pokémon information taken from the pokemon char object array
   pokemonName.textContent = randPokemon.name;
   document.querySelector(".pokemon-img").src = randPokemon.img; // Set the image source
   document.querySelector(
