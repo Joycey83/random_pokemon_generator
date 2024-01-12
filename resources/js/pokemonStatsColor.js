@@ -1,4 +1,5 @@
 function createStatColorSpan(statType, statValue) {
+  console.log(statType, statValue);
   const statColors = {
     hp: "hp-type",
     attack: "attack-type",
