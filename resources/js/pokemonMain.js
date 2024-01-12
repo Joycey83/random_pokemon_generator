@@ -1,5 +1,5 @@
 import pokemonChar from "./pokemonData.js";
-import createStatColorSpan from "./pokemonStatsColor.js";
+import getBackgroundColor from "./pokemonStatsColor.js";
 
 // These variables grab the HTML elements needed to interact with the DOM
 const pokemonName = document.querySelector(".pokemon-name");
@@ -75,13 +75,13 @@ function generatePokemon() {
     }
   }
 }
-function getBackgroundColor(statValue) {
-  return statValue > 65
-    ? "lightgreen"
-    : statValue < 65
-    ? "lightcoral"
-    : "transparent";
-}
+// function getBackgroundColor(statValue) {
+//   return statValue > 65
+//     ? "lightgreen"
+//     : statValue < 65
+//     ? "lightcoral"
+//     : "transparent";
+// }
 
 // Updated createStatTypeSpan function to use statType instead of statName
 function createStatTypeSpan(statType) {
