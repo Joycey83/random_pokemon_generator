@@ -45,14 +45,42 @@ function generatePokemon() {
   // Clear any previous stats spans
   statsInfoContainer.innerHTML = "";
   // Create and append stats spans
+  // for (const statName in randPokemon.stats) {
+  //   if (randPokemon.stats.hasOwnProperty(statName)) {
+  //     const statValue = randPokemon.stats[statName];
+  //     const statsSpan = createStatTypeSpan(`${statName} : ${statValue}`);
+  //     statsSpan.classList.add(createStatColorSpan(statName)); // Updated line
+  //     statsInfoContainer.appendChild(statsSpan);
+  //   }
+  // }
+  // Clear any previous stats spans
+  statsInfoContainer.innerHTML = "";
+
+  // Created and append stats spans
   for (const statName in randPokemon.stats) {
     if (randPokemon.stats.hasOwnProperty(statName)) {
       const statValue = randPokemon.stats[statName];
+
+      // Created stats span
       const statsSpan = createStatTypeSpan(`${statName} : ${statValue}`);
-      statsSpan.classList.add(createStatColorSpan(statName, statValue)); // Updated line
+
+      // Add background color class
+      statsSpan.classList.add(createStatColorSpan(statName));
+
+      // Change background color using style property
+      statsSpan.style.backgroundColor = getBackgroundColor(statValue);
+
+      // Append stats span to container
       statsInfoContainer.appendChild(statsSpan);
     }
   }
+}
+function getBackgroundColor(statValue) {
+  return statValue > 65
+    ? "lightgreen"
+    : statValue < 65
+    ? "lightcoral"
+    : "transparent";
 }
 
 // Updated createStatTypeSpan function to use statType instead of statName
