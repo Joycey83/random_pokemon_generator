@@ -9,13 +9,12 @@ function createStatColorSpan(statType, statValue) {
     speed: "speed-type",
   };
 
-  if (statType === "attack" && statValue > 65) {
-    return "attack-type";
-  } else if (statType === "attack" && statValue < 65) {
-    return "defense-type";
-  } else {
-    return statColors[statType.toLowerCase()] || "pokemon-type-span";
+  // Check if statType is 'defense' and statValue is greater than 65
+  if (statType.toLowerCase() === "defense" && statValue > 65) {
+    return "defense-high"; // return a different class
   }
+
+  return statColors[statType.toLowerCase()] || "pokemon-type-span";
 }
 
 export default createStatColorSpan;
