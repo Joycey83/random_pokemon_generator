@@ -1,4 +1,4 @@
-function createStatColorSpan(statType) {
+function createStatColorSpan(statType, statValue) {
   const statColors = {
     hp: "hp-type",
     attack: "attack-type",
@@ -8,10 +8,10 @@ function createStatColorSpan(statType) {
     speed: "speed-type",
   };
 
-  if (statType.attack > 65) {
-    return "purple"; // assuming you want to return a color string
-  } else if (statType.attack < 35) {
-    return "blue";
+  if (statType === "attack" && statValue > 65) {
+    return "purple";
+  } else if (statType === "attack" && statValue < 65) {
+    return "aqua";
   } else {
     return statColors[statType.toLowerCase()] || "pokemon-type-span";
   }
