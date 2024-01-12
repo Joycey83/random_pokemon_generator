@@ -280,7 +280,7 @@ body {
   background-color: #a0e515;
 } */
 
-.hp-type {
+/* .hp-type {
   background-color: #a0e515;
 }
 
@@ -302,8 +302,12 @@ body {
 
 .speed-type {
   background-color: #00c2b8;
+} */
+
+.high-stat {
+  background-color: #1734e5;
 }
 
-.defense-high {
-  background-color: orangered;
+.low-stat {
+  background-color: red;
 }

@@ -1,5 +1,4 @@
 function createStatColorSpan(statType, statValue) {
-  console.log(statType, statValue);
   const statColors = {
     hp: "hp-type",
     attack: "attack-type",
@@ -9,12 +8,16 @@ function createStatColorSpan(statType, statValue) {
     speed: "speed-type",
   };
 
-  // Check if statType is 'defense' and statValue is greater than 65
-  if (statType.toLowerCase() === "defense" && statValue > 65) {
-    return "defense-high"; // return a different class
+  let colorClass = statColors[statType.toLowerCase()] || "pokemon-type-span";
+
+  // Added a condition to change the color based on the stat value
+  if (statValue > 65) {
+    colorClass += " high-stat"; // Add class for high stats
+  } else if (statValue < 65) {
+    colorClass += " low-stat"; // Add class for low stats
   }
 
-  return statColors[statType.toLowerCase()] || "pokemon-type-span";
+  return colorClass;
 }
 
 export default createStatColorSpan;
