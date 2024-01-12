@@ -49,7 +49,7 @@ function generatePokemon() {
     if (randPokemon.stats.hasOwnProperty(statName)) {
       const statValue = randPokemon.stats[statName];
       const statsSpan = createStatTypeSpan(`${statName} : ${statValue}`);
-      statsSpan.classList.add(createStatColorSpan(statName)); // PlaceHolder stats Color
+      statsSpan.classList.add(createStatColorSpan(statName, statValue)); // PlaceHolder stats Color
       statsInfoContainer.appendChild(statsSpan);
     }
   }
