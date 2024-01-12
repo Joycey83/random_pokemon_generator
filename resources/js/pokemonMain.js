@@ -66,7 +66,7 @@ function generatePokemon() {
       const statsSpan = createStatTypeSpan(`${statName} : ${statValue}`);
 
       // Add background color class
-      statsSpan.classList.add(createStatColorSpan(statName));
+      // statsSpan.classList.add(createStatColorSpan(statName));
 
       // Change background color using style property
       statsSpan.style.backgroundColor = getBackgroundColor(statValue);
