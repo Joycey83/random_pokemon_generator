@@ -10,6 +10,8 @@ function createStatColorSpan(statType) {
 
   if (statType.attack > 65) {
     return "red"; // assuming you want to return a color string
+  } else {
+    return "pokemon-type-span";
   }
 
   return statColors[statType.toLowerCase()] || "pokemon-type-span";
