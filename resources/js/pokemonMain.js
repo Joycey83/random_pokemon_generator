@@ -1,6 +1,6 @@
 import pokemonChar from "./pokemonData.js";
 import getBackgroundColor from "./pokemonStatsValue.js";
-import createStatColorSpan from "./pokemonStatsColor.js";
+// import createStatColorSpan from "./pokemonStatsColor.js";
 
 // These variables grab the HTML elements needed to interact with the DOM
 const pokemonName = document.querySelector(".pokemon-name");
