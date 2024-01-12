@@ -44,17 +44,7 @@ function generatePokemon() {
   }
 
   // Clear any previous stats spans
-  statsInfoContainer.innerHTML = "";
-  // Create and append stats spans
-  // for (const statName in randPokemon.stats) {
-  //   if (randPokemon.stats.hasOwnProperty(statName)) {
-  //     const statValue = randPokemon.stats[statName];
-  //     const statsSpan = createStatTypeSpan(`${statName} : ${statValue}`);
-  //     statsSpan.classList.add(createStatColorSpan(statName)); // Updated line
-  //     statsInfoContainer.appendChild(statsSpan);
-  //   }
-  // }
-  // Clear any previous stats spans
+
   statsInfoContainer.innerHTML = "";
 
   // Created and append stats spans
@@ -76,13 +66,6 @@ function generatePokemon() {
     }
   }
 }
-// function getBackgroundColor(statValue) {
-//   return statValue > 65
-//     ? "lightgreen"
-//     : statValue < 65
-//     ? "lightcoral"
-//     : "transparent";
-// }
 
 // Updated createStatTypeSpan function to use statType instead of statName
 function createStatTypeSpan(statType) {
@@ -100,21 +83,6 @@ function createTypeSpan(type) {
   typeContainer.appendChild(typeSpan);
   return typeSpan;
 }
-
-// File was getting too squashed up with code, so created external file and imported this function
-
-// function createStatColorSpan(statType) {
-//   const statColors = {
-//     hp: "hp-type",
-//     attack: "attack-type",
-//     defense: "defense-type",
-//     "sp.atk": "sp-atk-type",
-//     "sp.def": "sp-def-type",
-//     speed: "speed-type",
-//   };
-
-//   return statColors[statType.toLowerCase()] || "pokemon-type-span";
-// }
 
 // create a color span for the pokemon type
 function createColorSpan(type) {
