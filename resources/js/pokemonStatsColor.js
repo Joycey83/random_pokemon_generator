@@ -12,7 +12,7 @@ function createStatColorSpan(statType, statValue) {
   if (statType === "attack" && statValue > 65) {
     return "attack-type";
   } else if (statType === "attack" && statValue < 65) {
-    return "place-holder";
+    return "defense-type";
   } else {
     return statColors[statType.toLowerCase()] || "pokemon-type-span";
   }
