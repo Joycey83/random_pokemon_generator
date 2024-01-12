@@ -9,9 +9,9 @@ function createStatColorSpan(statType, statValue) {
   };
 
   if (statType === "attack" && statValue > 65) {
-    return "purple";
+    return "attack-type";
   } else if (statType === "attack" && statValue < 65) {
-    return "aqua";
+    return "place-holder";
   } else {
     return statColors[statType.toLowerCase()] || "pokemon-type-span";
   }

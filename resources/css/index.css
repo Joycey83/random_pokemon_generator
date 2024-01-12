@@ -303,3 +303,7 @@ body {
 .speed-type {
   background-color: #00c2b8;
 }
+
+.place-holder {
+  background-color: orangered;
+}
