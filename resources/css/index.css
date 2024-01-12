@@ -281,7 +281,7 @@ body {
 } */
 
 .hp-type {
-  background-color: #ffdd57;
+  background-color: #a0e515;
 }
 
 .attack-type {
@@ -297,9 +297,9 @@ body {
 }
 
 .sp-def-type {
-  background-color: purple;
+  background-color: #00c2b8;
 }
 
 .speed-type {
-  background-color: blue;
+  background-color: #00c2b8;
 }
