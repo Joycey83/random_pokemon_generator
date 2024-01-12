@@ -8,16 +8,32 @@ function createStatColorSpan(statType, statValue) {
     speed: "speed-type",
   };
 
-  let colorClass = statColors[statType.toLowerCase()] || "pokemon-type-span";
+  const defaultColor = "pokemon-type-span";
+  const backgroundColor = statColors[statType.toLowerCase()] || defaultColor;
 
-  // Added a condition to change the color based on the stat value
+  // Set background color based on the condition
   if (statValue > 65) {
-    colorClass += " high-stat"; // Add class for high stats
+    return `${backgroundColor} greater-than-65`;
   } else if (statValue < 65) {
-    colorClass += " low-stat"; // Add class for low stats
+    return `${backgroundColor} lower-than-65`;
+  } else {
+    return backgroundColor;
   }
-
-  return colorClass;
 }
 
 export default createStatColorSpan;
+
+// function createStatColorSpan(statType) {
+//   const statColors = {
+//     hp: "hp-type",
+//     attack: "attack-type",
+//     defense: "defense-type",
+//     "sp.atk": "sp-atk-type",
+//     "sp.def": "sp-def-type",
+//     speed: "speed-type",
+//   };
+
+//   return statColors[statType.toLowerCase()] || "pokemon-type-span";
+// }
+
+// export default createStatColorSpan;
