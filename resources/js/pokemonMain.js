@@ -42,7 +42,7 @@ function generatePokemon() {
     typeSpan.classList.add(createColorSpan(randPokemon.type));
     typeContainer.appendChild(typeSpan);
 
-    console.log(randPokemon.stats);
+    // console.log(randPokemon.stats);
   }
 
   // Clear any previous stats spans
