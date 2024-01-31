@@ -41,6 +41,8 @@ function generatePokemon() {
     const typeSpan = createTypeSpan(randPokemon.type);
     typeSpan.classList.add(createColorSpan(randPokemon.type));
     typeContainer.appendChild(typeSpan);
+
+    console.log(randPokemon.stats);
   }
 
   // Clear any previous stats spans
@@ -59,8 +61,7 @@ function generatePokemon() {
       // statsSpan.classList.add(createStatColorSpan(statName));
 
       // Change background color using style property
-      statsSpan.style.backgroundColor = getBackgroundColor(statValue);
-      statsSpan.style.backgroundColor = getBackgroundColor(statName);
+      statsSpan.style.backgroundColor = getBackgroundColor(statName, statValue);
 
       // Append stats span to container
       statsInfoContainer.appendChild(statsSpan);

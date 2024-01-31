@@ -1,13 +1,13 @@
 function getBackgroundColor(statName, statValue) {
+  console.log(`statName: ${statName}, statValue: ${statValue}`); // Add this line
+
   if (statName === "Total") {
     return "purple"; // Add color to total span
   }
 
-  const numValue = Number(statValue);
-
-  return numValue > 65
+  return statValue > 65
     ? "lightgreen"
-    : numValue < 65
+    : statValue < 65
     ? "lightcoral"
     : "#ffa07a";
 }
