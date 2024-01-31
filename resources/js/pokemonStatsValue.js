@@ -1,6 +1,6 @@
-function getBackgroundColor(statValue) {
-  if (statValue === "total") {
-    return "purple"; // replace with your color
+function getBackgroundColor(statName, statValue) {
+  if (statName === "Total") {
+    return "purple"; // Add color to total span
   }
 
   return statValue > 65

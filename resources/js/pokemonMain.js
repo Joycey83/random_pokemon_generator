@@ -60,6 +60,7 @@ function generatePokemon() {
 
       // Change background color using style property
       statsSpan.style.backgroundColor = getBackgroundColor(statValue);
+      statsSpan.style.backgroundColor = getBackgroundColor(statName);
 
       // Append stats span to container
       statsInfoContainer.appendChild(statsSpan);
