@@ -147,6 +147,7 @@ This JavaScript code is for a Pokémon character generator. Here's a breakdown o
 
 6. **createColorSpan Function**: This function returns a string representing a CSS class based on the Pokémon type. The returned class can be used to style the Pokémon type span with a color corresponding to the Pokémon type.
 
+
 The additional code you've provided completes the Pokémon character generator. Here's what the new parts do:
 
 1. **createTypeSpan Function**: This function creates a span element for a given Pokémon type. It sets the innerHTML of the span to the type, appends the span to the `typeContainer`, and returns the span.
