@@ -3,7 +3,7 @@ function getBackgroundColor(statValue) {
     ? "lightgreen"
     : statValue < 65
     ? "lightcoral"
-    : "transparent";
+    : "#ffa07a";
 }
 
 export default getBackgroundColor;
