@@ -3,9 +3,11 @@ function getBackgroundColor(statName, statValue) {
     return "purple"; // Add color to total span
   }
 
-  return statValue > 65
+  const numValue = Number(statValue);
+
+  return numValue > 65
     ? "lightgreen"
-    : statValue < 65
+    : numValue < 65
     ? "lightcoral"
     : "#ffa07a";
 }
