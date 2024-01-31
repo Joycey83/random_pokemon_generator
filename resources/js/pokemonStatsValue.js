@@ -1,5 +1,5 @@
-function getBackgroundColor(statName, statValue) {
-  if (statName === "total") {
+function getBackgroundColor(statValue) {
+  if (statValue === "total") {
     return "purple"; // replace with your color
   }
 
